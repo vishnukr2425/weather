@@ -17,7 +17,7 @@ const Temp=()=>{
     
     useEffect( ()=>{
         const fetchApi= async ()=>{
-            const loca= `http://api.openweathermap.org/geo/1.0/direct?q=${search}&limit=5&appid=ebc6671079bb56146e1a621168e8d2cc`;
+            const loca= `https://api.openweathermap.org/geo/1.0/direct?q=${search}&limit=5&appid=ebc6671079bb56146e1a621168e8d2cc`;
             const res= await fetch(loca);
             const resjson= await res.json();
             const lati= resjson[0].lat;
